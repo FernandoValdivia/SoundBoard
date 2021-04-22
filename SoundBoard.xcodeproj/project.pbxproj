@@ -14,6 +14,8 @@
 		7DDE8F1C2631C26500FA8FEC /* SoundBoard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7DDE8F1A2631C26500FA8FEC /* SoundBoard.xcdatamodeld */; };
 		7DDE8F1E2631C26900FA8FEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DDE8F1D2631C26900FA8FEC /* Assets.xcassets */; };
 		7DDE8F212631C26900FA8FEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DDE8F1F2631C26900FA8FEC /* LaunchScreen.storyboard */; };
+		7DDE8F302631CC1E00FA8FEC /* UtilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDE8F2F2631CC1E00FA8FEC /* UtilView.swift */; };
+		7DDE8F352631CEB000FA8FEC /* SoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDE8F342631CEB000FA8FEC /* SoundViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		7DDE8F1D2631C26900FA8FEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DDE8F202631C26900FA8FEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DDE8F222631C26900FA8FEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DDE8F2F2631CC1E00FA8FEC /* UtilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilView.swift; sourceTree = "<group>"; };
+		7DDE8F342631CEB000FA8FEC /* SoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +62,66 @@
 		7DDE8F102631C26500FA8FEC /* SoundBoard */ = {
 			isa = PBXGroup;
 			children = (
-				7DDE8F112631C26500FA8FEC /* AppDelegate.swift */,
-				7DDE8F132631C26500FA8FEC /* SceneDelegate.swift */,
-				7DDE8F152631C26500FA8FEC /* ViewController.swift */,
-				7DDE8F172631C26500FA8FEC /* Main.storyboard */,
-				7DDE8F1D2631C26900FA8FEC /* Assets.xcassets */,
-				7DDE8F1F2631C26900FA8FEC /* LaunchScreen.storyboard */,
+				7DDE8F332631CC5700FA8FEC /* Resourses */,
+				7DDE8F2E2631CBAC00FA8FEC /* Views */,
+				7DDE8F2C2631CB9D00FA8FEC /* Models */,
+				7DDE8F2B2631CB9300FA8FEC /* Applications */,
+				7DDE8F2A2631CB7900FA8FEC /* Utils */,
+				7DDE8F292631CB7000FA8FEC /* Controllers */,
 				7DDE8F222631C26900FA8FEC /* Info.plist */,
 				7DDE8F1A2631C26500FA8FEC /* SoundBoard.xcdatamodeld */,
 			);
 			path = SoundBoard;
+			sourceTree = "<group>";
+		};
+		7DDE8F292631CB7000FA8FEC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7DDE8F152631C26500FA8FEC /* ViewController.swift */,
+				7DDE8F342631CEB000FA8FEC /* SoundViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7DDE8F2A2631CB7900FA8FEC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7DDE8F2F2631CC1E00FA8FEC /* UtilView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7DDE8F2B2631CB9300FA8FEC /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				7DDE8F132631C26500FA8FEC /* SceneDelegate.swift */,
+				7DDE8F112631C26500FA8FEC /* AppDelegate.swift */,
+			);
+			path = Applications;
+			sourceTree = "<group>";
+		};
+		7DDE8F2C2631CB9D00FA8FEC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7DDE8F2E2631CBAC00FA8FEC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7DDE8F172631C26500FA8FEC /* Main.storyboard */,
+				7DDE8F1F2631C26900FA8FEC /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7DDE8F332631CC5700FA8FEC /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				7DDE8F1D2631C26900FA8FEC /* Assets.xcassets */,
+			);
+			path = Resourses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +198,8 @@
 				7DDE8F162631C26500FA8FEC /* ViewController.swift in Sources */,
 				7DDE8F122631C26500FA8FEC /* AppDelegate.swift in Sources */,
 				7DDE8F142631C26500FA8FEC /* SceneDelegate.swift in Sources */,
+				7DDE8F352631CEB000FA8FEC /* SoundViewController.swift in Sources */,
+				7DDE8F302631CC1E00FA8FEC /* UtilView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
