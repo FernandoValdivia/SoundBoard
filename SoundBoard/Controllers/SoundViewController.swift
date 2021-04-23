@@ -48,19 +48,21 @@ class SoundViewController: UIViewController {
         do {
             try audioPlayer = AVAudioPlayer(contentsOf: audioURL!)
             audioPlayer!.play()
-        } catch let error as NSError {
-            print(error)
+        } catch {
         }
     }
     
     @IBAction func addTapped(_ sender: UIButton) {
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-        
         let sound = Sound(context: context)
-        sound.name = nameField.text
-        sound.audio = NSData(contentsOf: audioURL!) as Data?
-        (UIApplication.shared.delegate as! AppDelegate).saveContext()
-        navigationController?.popViewController(animated: true)
+        
+        do {
+            sound.name = nameField.text
+            try sound.audio = Data(contentsOf: audioURL!)
+            (UIApplication.shared.delegate as! AppDelegate).saveContext()
+            navigationController!.popViewController(animated: true)
+        } catch  {
+        }
     }
     
     func setUpRecord() {
@@ -74,9 +76,9 @@ class SoundViewController: UIViewController {
             let pathComponents = [basePath, "audio.m4a"]
             audioURL = NSURL.fileURL(withPathComponents: pathComponents)!
             print("**************************")
-            print(audioURL)
+            print(audioURL!)
             print("**************************")
-            var settings :[String:AnyObject?] = [:]
+            var settings: [String:AnyObject] = [:]
             settings[AVFormatIDKey] = Int(kAudioFormatMPEG4AAC) as AnyObject?
             settings[AVSampleRateKey] = 44100.00 as AnyObject?
             settings[AVNumberOfChannelsKey] = 2 as AnyObject?

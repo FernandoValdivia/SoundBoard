@@ -34,7 +34,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Nuy-dK-Hcm">
                             <color key="tintColor" systemColor="systemRedColor"/>
                             <connections>
-                                <segue destination="DFV-N8-xVW" kind="showDetail" id="7uD-5I-OSc"/>
+                                <segue destination="DFV-N8-xVW" kind="show" id="PSv-Ip-llq"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -51,11 +51,11 @@
             <objects>
                 <viewController id="DFV-N8-xVW" customClass="SoundViewController" customModule="SoundBoard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QNe-0m-kLa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3a-D8-YVd">
-                                <rect key="frame" x="182.5" y="30" width="49" height="30"/>
+                                <rect key="frame" x="182.5" y="118" width="49" height="30"/>
                                 <state key="normal" title="Record">
                                     <color key="titleColor" systemColor="systemRedColor"/>
                                 </state>
@@ -64,7 +64,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yL2-P3-ILG">
-                                <rect key="frame" x="192" y="80" width="30" height="30"/>
+                                <rect key="frame" x="192" y="168" width="30" height="30"/>
                                 <state key="normal" title="Play">
                                     <color key="titleColor" systemColor="systemGroupedBackgroundColor"/>
                                 </state>
@@ -73,7 +73,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYm-6F-Qt6">
-                                <rect key="frame" x="192" y="203" width="30" height="30"/>
+                                <rect key="frame" x="192" y="291" width="30" height="30"/>
                                 <state key="normal" title="Add">
                                     <color key="titleColor" systemColor="tertiarySystemBackgroundColor"/>
                                 </state>
@@ -82,7 +82,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JRe-C5-4ER">
-                                <rect key="frame" x="40" y="139" width="334" height="34"/>
+                                <rect key="frame" x="40" y="227" width="334" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
